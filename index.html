@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="header">
+        <h1 id="heading">Learning JavaScript</h1>
+        <p> Antonio Rungo</p>
+    </div>
+
+    <div class="container">
+        <button onmouseout = "clearDate()" onmouseover="showDate()">Show Date</button>
+        <h1 id="time"></h1>
+    
+    
+        <form action="#" method="post" name="myForm" onsubmit="validateForm()">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <br>
+            <div>
+                <label for="#">Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <br>
+            <div>
+                <label for="">Background</label>
+                <select name="background" id="background" onchange="changeBackground(this)">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
